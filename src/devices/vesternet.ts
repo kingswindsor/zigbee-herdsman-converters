@@ -320,7 +320,7 @@ export const definitions: DefinitionWithExtend[] = [
     },
     {
         zigbeeModel: ["VES-ZB-PIR-21"],
-        model: "ES-ZB-PIR-21",
+        model: "VES-ZB-PIR-21",
         vendor: "Vesternet",
         description: "Zigbee motion sensor",
         extend: [m.battery(), m.iasZoneAlarm({zoneType: "occupancy", zoneAttributes: ["alarm_1", "alarm_2", "tamper", "battery_low"]})],
