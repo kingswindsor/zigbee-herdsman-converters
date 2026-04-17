@@ -268,7 +268,7 @@ export const definitions: DefinitionWithExtend[] = [
             await reporting.batteryPercentageRemaining(device.getEndpoint(1));
         },
     },
-    {   
+    {
         fingerprint: [
             {modelID: "ZG2833K8_EU05", softwareBuildID: "2.5.3_r20"},
             {modelID: "ZG2833K8_EU05", softwareBuildID: "2.7.6_r25"},
@@ -319,12 +319,10 @@ export const definitions: DefinitionWithExtend[] = [
         },
     },
     {
-        zigbeeModel: ['VES-ZB-PIR-21'],
-        model: 'Zigbee Motion Sensor',
-        vendor: 'Vesternet',
-        description: 'Vesternet Zigbee Motion Sensor',
-        extend: [m.battery(), m.iasZoneAlarm({"zoneType":"generic","zoneAttributes":["alarm_1","alarm_2","tamper","battery_low"]})],
-    },   
-};
-
+        zigbeeModel: ["VES-ZB-PIR-21"],
+        model: "ES-ZB-PIR-21",
+        vendor: "Vesternet",
+        description: "Zigbee motion sensor",
+        extend: [m.battery(), m.iasZoneAlarm({zoneType: "occupancy", zoneAttributes: ["alarm_1", "alarm_2", "tamper", "battery_low"]})],
+    },
 ];
