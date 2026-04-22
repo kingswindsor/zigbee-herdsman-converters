@@ -326,4 +326,3 @@ export const definitions: DefinitionWithExtend[] = [
         extend: [m.battery(), m.iasZoneAlarm({zoneType: "occupancy", zoneAttributes: ["alarm_1", "alarm_2", "tamper", "battery_low"]})],
     },
 ];
-
